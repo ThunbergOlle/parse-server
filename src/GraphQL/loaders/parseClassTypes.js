@@ -308,7 +308,7 @@ const load = (parseGraphQLSchema, parseClass, parseClassConfig: ?ParseGraphQLCla
     parseGraphQLSchema.addGraphQLType(classGraphQLRelationConstraintsType) ||
     defaultGraphQLTypes.OBJECT;
 
-  const classGraphQLOrderTypeName = `${graphQLClassName}Order`;
+  const classGraphQLOrderTypeName = `${graphQLClassName}OrderInput`;
   let classGraphQLOrderType = new GraphQLEnumType({
     name: classGraphQLOrderTypeName,
     description: `The ${classGraphQLOrderTypeName} input type is used when sorting objects of the ${graphQLClassName} class.`,
